@@ -28,7 +28,7 @@ class test_file_data(unittest.TestCase):
     '''
     def test_get_file_data(self):
         file_name = "/Users/apple/Documents/GitHub/conferenceTrackManagement/input_data/test_input_file"
-        expected_file_data = ["Writing Fast Tests Against Enterprise Rails 60min","Overdoing it in Python 45min"]
+        expected_file_data = ["Writing Fast Tests Against Enterprise Rails 60min","Overdoing it in Python lightningjfjdk","Rails for Python Developers lightning"]
         actual_file_data = get_file_data(file_name)
         print(actual_file_data)
         self.assertEqual(expected_file_data, actual_file_data)

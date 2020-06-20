@@ -7,7 +7,7 @@ import os
 
 def get_cli_arguments():
     print("\n#####################################################################")
-    print("### Welcome to the Conference Management Program ###")
+    print("### Welcome to the Conference Track Management Program ###")
     print("#####################################################################\n")
     file_name = input("Please enter the input filename: ")
 
