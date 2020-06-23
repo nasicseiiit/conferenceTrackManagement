@@ -32,4 +32,4 @@ def mapping_duration_to_min_talk(map_talk_and_time, talks_with_min):
     return map_talk_and_time
 
 def is_valid_duration(duration):
-    return (duration>=constants.MIN_DURATION and duration<=constants.MAX_DURATION)
+    return (duration>=constants.MIN_DURATION and duration<=constants.SLOT_DURATION)
