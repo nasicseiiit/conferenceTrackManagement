@@ -1,9 +1,8 @@
 
 import unittest
 
-from app.input_processor.input_data import get_file_data, check_file_existance
 from app.input_processor.input_data_validator import mapping_duration_to_lightning_talk, mapping_duration_to_min_talk, \
-    is_valid_duration, validate_input_data
+     validate_input_data
 
 
 class test_file_data(unittest.TestCase):
@@ -26,27 +25,6 @@ class test_file_data(unittest.TestCase):
         talks_with_min = ["Writing Fast Tests Against Enterprise Rails 60min"]
         expected_answer = {'Rails for Python Developers lightning': 5, 'Writing Fast Tests Against Enterprise Rails 60min': 60}
         actual_answer = mapping_duration_to_min_talk(map_talk_and_time, talks_with_min)
-        print(actual_answer)
-        self.assertEqual(expected_answer, actual_answer)
-
-    '''
-            test case to check is the duration is valid with valid duration time
-            '''
-    def test_is_valid_duration(self):
-        duration = 23
-        expected_answer = True
-        actual_answer = is_valid_duration(duration)
-        print(actual_answer)
-        self.assertEqual(expected_answer, actual_answer)
-
-    '''
-                test case to check is the duration is valid with invalid duration time
-                '''
-
-    def test_is_valid_duration(self):
-        duration = 1123
-        expected_answer = False
-        actual_answer = is_valid_duration(duration)
         print(actual_answer)
         self.assertEqual(expected_answer, actual_answer)
 
