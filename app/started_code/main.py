@@ -12,7 +12,8 @@ def main():
     file_name = get_cli_arguments()
     file_data = get_file_data(file_name)
     valid_talks = validate_input_data(file_data)
-    process_and_schedule_talks(valid_talks)
+    conference = process_and_schedule_talks(valid_talks)
+
 
 if __name__ == "__main__":
     main()
