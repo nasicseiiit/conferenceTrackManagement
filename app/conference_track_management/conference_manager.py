@@ -23,4 +23,4 @@ def process_and_schedule_talks(valid_talks):
         network_events.append(networking(constants.NETWORKING_START_TIME))
         track_count += 1
         tracks.append(track_count)
-    return morning_slots, lunch_slots, afternoon_slot, network_events
+    return tracks, morning_slots, lunch_slots, afternoon_slots, network_events

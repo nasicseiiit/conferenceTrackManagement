@@ -1,4 +1,4 @@
-from app.utility.clendar_utils import get_start_time
+from app.utility.calendar_utils import get_start_time
 
 
 def fill_slot(start_time, duration, talks):
