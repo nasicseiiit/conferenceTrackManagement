@@ -17,7 +17,7 @@ def validate_input_data(file_data):
 
 def mapping_duration_to_lightning_talk(map_talk_and_time, talks_with_lightning):
     for talk in talks_with_lightning:
-        map_talk_and_time[talk] = constants.LIGHTNING_DURATION
+        map_talk_and_time[talk] = constants.LIGHTNING_DURATION_MINUTES
     return map_talk_and_time
 
 def mapping_duration_to_min_talk(map_talk_and_time, talks_with_min):
@@ -27,9 +27,5 @@ def mapping_duration_to_min_talk(map_talk_and_time, talks_with_min):
         split_line = line.split()
         minutes_string = split_line[-SUBTRACT_ONE]
         duration = int(minutes_string[:-SUBTRACT_THREE])
-        if(is_valid_duration(duration)):
-            map_talk_and_time[line] = duration
+        map_talk_and_time[line] = duration
     return map_talk_and_time
-
-def is_valid_duration(duration):
-    return (duration>=constants.MIN_DURATION and duration<=constants.SLOT_DURATION)
