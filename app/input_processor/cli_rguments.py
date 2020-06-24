@@ -13,8 +13,7 @@ def get_cli_arguments():
 
     if len(file_name) == 0 and len(sys.argv) == 2:
         file_name = sys.argv[1]
-    elif len(file_name) ==0 :
+    elif len(file_name) == 0 :
         current_directory = os.getcwd()
-        file_name = (os.path.abspath(os.path.join(current_directory, os.pardir)))
-        file_name = file_name + "/input_data/input_file"
+        file_name = current_directory + "/input_data/input_file"
     return file_name
