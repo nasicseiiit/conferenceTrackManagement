@@ -139,7 +139,7 @@ provide the input format using CLI or STDIN
 
  Then, Execute below command
  
-  `python -m unittest test/TestSuite.py`
+  `python -m unittest test/test_suite.py`
 
 # Steps to run test coverage
 
