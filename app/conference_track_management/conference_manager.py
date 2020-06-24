@@ -7,7 +7,7 @@ from app.constants import constants
 scheduling the conference with the talks
 '''
 def process_and_schedule_talks(valid_talks):
-    valid_talks = sorted(valid_talks.items(),key=operator.itemgetter(1),reverse=True)
+    valid_talks = sorted(valid_talks.items(), key=operator.itemgetter(1), reverse=True)
     track_count = 0
     morning_slots = []
     lunch_slots = []

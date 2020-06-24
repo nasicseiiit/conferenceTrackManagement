@@ -16,7 +16,7 @@ def fill_slot(start_time, session_duration, talks):
 '''
 adding the event to the session with the time and talk
 '''
-def event(start_time,talk):
+def event(start_time, talk):
     upto_last_third_char = -3
     time_and_talk = str(start_time.time())[0:upto_last_third_char]+" "+str(talk)
     return time_and_talk
@@ -24,7 +24,7 @@ def event(start_time,talk):
 '''
 checking whether the talk have the room or not
 '''
-def has_room(talk_duration,session_duration):
+def has_room(talk_duration, session_duration):
     return (talk_duration <= session_duration)
 
 def adding_talk_to_session(slot_talks, index, talk_duration, session_duration, start_time, talk, talks):
