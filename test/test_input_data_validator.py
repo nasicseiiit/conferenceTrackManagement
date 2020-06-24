@@ -5,7 +5,7 @@ from app.input_processor.input_data_validator import mapping_duration_to_lightni
      validate_input_data
 
 
-class test_file_data(unittest.TestCase):
+class test_validate_data(unittest.TestCase):
     '''
     test case to map duration time to lightning talk
     '''

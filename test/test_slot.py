@@ -4,7 +4,7 @@ import unittest
 from app.conference_track_management.slot import fill_slot, event, has_room
 from app.constants import constants
 
-class test_file_data(unittest.TestCase):
+class test_slot(unittest.TestCase):
     '''
     test case to fill the slot with the talk
     '''
@@ -35,7 +35,7 @@ class test_file_data(unittest.TestCase):
         self.assertTrue(has_room(talk_duration,session_duration))
 
     '''
-            test case to check has room or not by returning false
+            test case to check has room or not "by returning false"
             '''
     def test_has_room_returns_false(self):
         talk_duration = 180

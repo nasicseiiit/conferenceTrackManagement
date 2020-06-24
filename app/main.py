@@ -15,6 +15,5 @@ def main():
     [tracks, morning_slots, lunch_slots, afternoon_slots, network_events] = process_and_schedule_talks(valid_talks)
     print_schedule(tracks, morning_slots, lunch_slots, afternoon_slots, network_events)
 
-
 if __name__ == "__main__":
     main()
