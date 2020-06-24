@@ -3,7 +3,7 @@
 '''
 The method getInputData will get the data from the input files and return the listOfNumbersFromDirectory and alphaPhrasesFromDictionary
 '''
-from constants import constants
+from app.constants import constants
 
 
 def read_data(file_pointer):

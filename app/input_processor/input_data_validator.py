@@ -4,7 +4,7 @@ If the line ends with lightning then the duration will be 5 mins to the talk
 If the line ends with min then the minimum duration is 1 and the maximum duration is 180
 Else the talk will be discarded
 '''
-from constants import constants
+from app.constants import constants
 
 def validate_input_data(file_data):
     talks_with_lightning = (list(filter(lambda line: line.endswith("lightning"), file_data)))

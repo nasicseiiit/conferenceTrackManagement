@@ -1,7 +1,7 @@
 import operator
 
 from app.conference_track_management.slot import fill_slot, event
-from constants import constants
+from app.constants import constants
 
 '''
 scheduling the conference with the talks
