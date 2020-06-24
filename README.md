@@ -1,17 +1,28 @@
 # Conference Track Management
 
-You are planning a big programming conference and have received many proposals which have passed the initial screen process but you're having trouble fitting them into the time constraints of the day -- there are so many possibilities! So you write a program to do it for you.
+You are planning a big programming conference and have received many proposals which have passed the initial screen process but you're having trouble fitting them into the time constraints of the day
+ 
+there are so many possibilities! So you write a program to do it for you.
+
 • The conference has multiple tracks each of which has a morning and afternoon session.
+
 • Each session contains multiple talks.
+
 • Morning sessions begin at 9am and must finish by 12 noon, for lunch.
-• Afternoon sessions begin at 1pm and must finish in time for the networking
-event.
+
+• Afternoon sessions begin at 1pm and must finish in time for the networking event.
+
 • The networking event can start no earlier than 4:00 and no later than 5:00.
+
 • No talk title has numbers in it.
+
 • All talk lengths are either in minutes (not hours) or lightning (5 minutes).
+
 • Presenters will be very punctual; there needs to be no gap between sessions.
   
- Note that depending on how you choose to complete this problem, your solution may give a different ordering or combination of talks into tracks. This is acceptable; you don’t need to exactly duplicate the sample output given here.
+ Note that depending on how you choose to complete this problem, your solution may give a different ordering or combination of talks into tracks. 
+ 
+ This is acceptable; you don’t need to exactly duplicate the sample output given here.
 
 # Test input:
 
@@ -119,7 +130,7 @@ Then, cd to the conferenceTrackManagement folder
  
  cd conferenceTrackManagement
  
- cd to the values folder in app
+ cd to app folder
  
  cd app/
  
@@ -131,7 +142,7 @@ Then, cd to the conferenceTrackManagement folder
 
 provide the input format using CLI or STDIN
 
-`-> Passing zero command line arguments and not providing any STDIN input then the system by default will take the file in path  data/inputFile`
+`-> Passing zero command line arguments and not providing any STDIN input then the system by default will take the file in path  input_data/input_file`
 
 # Steps to run the test cases
  
@@ -154,6 +165,7 @@ provide the input format using CLI or STDIN
 # Contributing
 
 As I am a beginner and writing the projects in GitHub. 
+
 If you have any ideas or improvements, just open an issue by clicking on below link and tell me what you think.
 
 https://github.com/nasicseiiit/conferenceTrackManagement/issues/new
