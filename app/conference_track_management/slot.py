@@ -1,25 +1,38 @@
 from app.utility.calendar_utils import get_start_time
 
-
-def fill_slot(start_time, duration, talks):
+'''
+filling the sessions with the talks
+'''
+def fill_slot(start_time, session_duration, talks):
     slot_talks = []
-    i = 0
-    while(i < len(talks)):
-        minutes = talks[i][1]
-        talk = talks[i][0]
-        if(has_room(minutes,duration)):
-            slot_talk = event(start_time, talk)
-            start_time = get_start_time(start_time, minutes)
-            slot_talks.append(slot_talk)
-            duration -= minutes
-            del talks[i]
-            i -= 1
-        i += 1
+    index = 0
+    while(index < len(talks) and session_duration>0):
+        talk_duration = talks[index][1]
+        talk = talks[index][0]
+        [index, start_time, session_duration, slot_talks, talks] = adding_talk_to_session(slot_talks, index, talk_duration, session_duration, start_time, talk, talks)
+        index += 1
     return slot_talks
+
+'''
+adding the event to the session with the time and talk
+'''
 def event(start_time,talk):
-    return str(start_time.time())[0:-3]+" "+str(talk)
+    upto_last_third_char = -3
+    time_and_talk = str(start_time.time())[0:upto_last_third_char]+" "+str(talk)
+    return time_and_talk
 
-def has_room(talk_duration,duration):
-    return (talk_duration <= duration)
+'''
+checking whether the talk have the room or not
+'''
+def has_room(talk_duration,session_duration):
+    return (talk_duration <= session_duration)
 
-
+def adding_talk_to_session(slot_talks, index, talk_duration, session_duration, start_time, talk, talks):
+    if (has_room(talk_duration, session_duration)):
+        slot_talk = event(start_time, talk)
+        start_time = get_start_time(start_time, talk_duration)
+        slot_talks.append(slot_talk)
+        session_duration -= talk_duration
+        del talks[index]
+        index -= 1
+    return index, start_time, session_duration, slot_talks, talks

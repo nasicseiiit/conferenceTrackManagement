@@ -3,6 +3,7 @@
 '''
 The method getInputData will get the data from the input files and return the listOfNumbersFromDirectory and alphaPhrasesFromDictionary
 '''
+from constants import constants
 
 
 def read_data(file_pointer):
@@ -26,7 +27,7 @@ def get_file_data(file_name):
     if(file_pointer != False):
         file_data = read_data(file_pointer)
         return file_data
-    print("The input file is not exist")
+    print(constants.FILE_ERROR)
     return []
 
 ''' fetch the talks and eliminate invalid talks'''

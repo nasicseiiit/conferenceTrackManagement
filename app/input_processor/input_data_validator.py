@@ -6,7 +6,6 @@ Else the talk will be discarded
 '''
 from constants import constants
 
-
 def validate_input_data(file_data):
     talks_with_lightning = (list(filter(lambda line: line.endswith("lightning"), file_data)))
     talks_with_min = (list(filter(lambda line: line.endswith("min"), file_data)))
@@ -14,12 +13,16 @@ def validate_input_data(file_data):
     map_talk_and_time = mapping_duration_to_lightning_talk(map_talk_and_time,talks_with_lightning)
     map_talk_and_time = mapping_duration_to_min_talk(map_talk_and_time, talks_with_min)
     return map_talk_and_time
-
+'''
+adding the lightning talks 
+'''
 def mapping_duration_to_lightning_talk(map_talk_and_time, talks_with_lightning):
     for talk in talks_with_lightning:
         map_talk_and_time[talk] = constants.LIGHTNING_DURATION_MINUTES
     return map_talk_and_time
-
+'''
+adding the minute talks
+'''
 def mapping_duration_to_min_talk(map_talk_and_time, talks_with_min):
     SUBTRACT_THREE = 3
     SUBTRACT_ONE = 1

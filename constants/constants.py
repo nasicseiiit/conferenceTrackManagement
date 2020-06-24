@@ -1,8 +1,11 @@
 from app.utility import calendar_utils
 
+FILE_ERROR = "The input file is not exist"
+
 LUNCH_DURATION_MINUTES = 60
 LUNCH_TALK =  "Lunch"
 NETWORKING_DURATION_MINUTES = 60
+NWTWORKING_EVENT = "Networking Event"
 
 LIGHTNING_DURATION_MINUTES = 5
 

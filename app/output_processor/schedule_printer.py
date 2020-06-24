@@ -11,14 +11,23 @@ def print_schedule(tracks, morning_slots, lunch_slots, afternoon_slots, network_
         print_events(network_events[i])
         print()
 
+'''
+printing the tracks 
+'''
 def print_tracks(track_id):
-    print("Track ",track_id,":")
+    track = "Track "+str(track_id)+":"
+    print(track)
 
+'''
+printing the slots
+'''
 def print_slots(slots):
     if(len(slots)>0):
         for slot in slots:
             print(slot)
-
+'''
+printing the events
+'''
 def print_events(event):
     if(len(event)>0):
             print(event)
