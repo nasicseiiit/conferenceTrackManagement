@@ -7,8 +7,8 @@ Else the talk will be discarded
 from app.constants import constants
 
 def validate_input_data(file_data):
-    talks_with_lightning = (list(filter(lambda line: line.endswith(constants.LIGHTNING), file_data)))
-    talks_with_min = (list(filter(lambda line: line.endswith(constants.MINUTES), file_data)))
+    talks_with_lightning = lines_ending_with(file_data, constants.LIGHTNING)
+    talks_with_min = lines_ending_with(file_data, constants.MINUTES)
     map_talk_and_time = {}
     map_talk_and_time = mapping_duration_to_lightning_talk(map_talk_and_time, talks_with_lightning)
     map_talk_and_time = mapping_duration_to_min_talk(map_talk_and_time, talks_with_min)
@@ -32,3 +32,6 @@ def mapping_duration_to_min_talk(map_talk_and_time, talks_with_min):
         duration = int(minutes_string[:-SUBTRACT_THREE])
         map_talk_and_time[line] = duration
     return map_talk_and_time
+
+def lines_ending_with(file_data, key):
+ return (list(filter(lambda line: line.endswith(key), file_data)))
