@@ -1,7 +1,7 @@
 
 import unittest
 
-from app.conference_track_management.session import fill_slot, event, has_room
+from app.conference_track_management.session import fill_session, event, has_room
 from app.constants import constants
 
 class test_session_schedule(unittest.TestCase):
@@ -13,7 +13,7 @@ class test_session_schedule(unittest.TestCase):
         session_duration = constants.MORNING_SLOT_DURATION_MINUTES
         talks = [('Writing Fast Tests Against Enterprise Rails 60min', 60), ('Rails for Python Developers lightning', 5)]
         expected_answer = ['09:00 Writing Fast Tests Against Enterprise Rails 60min', '10:00 Rails for Python Developers lightning']
-        actual_answer = fill_slot(start_time, session_duration, talks)
+        actual_answer = fill_session(start_time, session_duration, talks)
         self.assertEqual(expected_answer, actual_answer)
 
     '''

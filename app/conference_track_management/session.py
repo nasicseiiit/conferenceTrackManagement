@@ -3,7 +3,7 @@ from app.utility.calendar_utils import get_start_time
 '''
 filling the sessions with the talks
 '''
-def fill_slot(start_time, session_duration, talks):
+def fill_session(start_time, session_duration, talks):
     slot_talks = []
     index = 0
     while(index < len(talks) and session_duration>0):

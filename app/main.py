@@ -12,8 +12,8 @@ def main():
     file_name = get_cli_arguments()
     file_data = get_file_data(file_name)
     valid_talks = validate_input_data(file_data)
-    [tracks, morning_slots, lunch_slots, afternoon_slots, network_events] = process_and_schedule_talks(valid_talks)
-    print_schedule(tracks, morning_slots, lunch_slots, afternoon_slots, network_events)
+    [tracks, morning_sessions, lunch_sessions, afternoon_sessions, network_events] = process_and_schedule_talks(valid_talks)
+    print_schedule(tracks, morning_sessions, lunch_sessions, afternoon_sessions, network_events)
 
 if __name__ == "__main__":
     main()

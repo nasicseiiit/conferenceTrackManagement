@@ -2,12 +2,12 @@
 printing the conference schedule
 '''
 
-def print_schedule(tracks, morning_slots, lunch_slots, afternoon_slots, network_events):
+def print_schedule(tracks, morning_sessions, lunch_sessions, afternoon_sessions, network_events):
     for i in range(len(tracks)):
         print_tracks(tracks[i])
-        print_slots(morning_slots[i])
-        print_events(lunch_slots[i])
-        print_slots(afternoon_slots[i])
+        print_sessions(morning_sessions[i])
+        print_events(lunch_sessions[i])
+        print_sessions(afternoon_sessions[i])
         print_events(network_events[i])
         print()
 
@@ -21,7 +21,7 @@ def print_tracks(track_id):
 '''
 printing the sessions
 '''
-def print_slots(sessions):
+def print_sessions(sessions):
     if(len(sessions)>0):
         for session in sessions:
             print(session)
