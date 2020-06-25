@@ -1,6 +1,6 @@
 import operator
 
-from app.conference_track_management.slot import fill_slot, event
+from app.conference_track_management.session import fill_slot, event
 from app.constants import constants
 
 '''

@@ -1,10 +1,10 @@
 
 import unittest
 
-from app.conference_track_management.slot import fill_slot, event, has_room
+from app.conference_track_management.session import fill_slot, event, has_room
 from app.constants import constants
 
-class test_slot(unittest.TestCase):
+class test_session_schedule(unittest.TestCase):
     '''
     test case to fill the slot with the talk
     '''
