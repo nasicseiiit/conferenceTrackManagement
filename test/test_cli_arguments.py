@@ -1,7 +1,7 @@
 
 import unittest
 
-from app.input_processor.cli_rguments import get_cli_arguments
+from app.reader.cli_rguments import get_cli_arguments
 
 class test_for_cli_arguments(unittest.TestCase):
     '''

@@ -1,7 +1,7 @@
 
 import unittest
 
-from app.input_processor.input_data_validator import mapping_duration_to_lightning_talk, mapping_duration_to_min_talk, \
+from app.reader.input_data_validator import mapping_duration_to_lightning_talk, mapping_duration_to_min_talk, \
      validate_input_data
 
 

@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from app.input_processor.input_data import get_file_data, check_file_existance
+from app.reader.input_data import get_file_data, check_file_existance
 
 
 class test_file_data(unittest.TestCase):
