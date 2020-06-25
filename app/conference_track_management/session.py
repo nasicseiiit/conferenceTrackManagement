@@ -1,5 +1,6 @@
 from app.utility.calendar_utils import get_start_time
 
+UPTO_LAST_THIRD_CHAR = -3
 '''
 filling the sessions with the talks
 '''
@@ -17,8 +18,7 @@ def fill_session(start_time, session_duration, talks):
 adding the event to the session with the time and talk
 '''
 def event(start_time, talk):
-    upto_last_third_char = -3
-    time_and_talk = str(start_time.time())[0:upto_last_third_char]+" "+str(talk)
+    time_and_talk = str(start_time.time())[0:UPTO_LAST_THIRD_CHAR]+" "+str(talk)
     return time_and_talk
 
 '''
