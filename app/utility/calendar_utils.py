@@ -1,14 +1,15 @@
 from datetime import datetime
 import datetime
 
+YEAR = 100
+MONTH = 1
+DATE = 1
+SECONDS = 00
+
 '''
 getting the satrt time
 '''
 def get_calendar_time(hours, minutes):
-    YEAR = 100
-    MONTH = 1
-    DATE = 1
-    SECONDS = 00
     return datetime.datetime(YEAR, MONTH, DATE, hours, minutes, SECONDS)
 '''
 adding the talk duration and making it as start time
