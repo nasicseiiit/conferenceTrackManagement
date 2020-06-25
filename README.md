@@ -116,14 +116,6 @@ First, clone conferenceTrackManagement using git
 
 _`https://github.com/nasicseiiit/conferenceTrackManagement`_
 
-# To build the project
-
-Then, cd to the conferenceTrackManagement folder 
-
- cd conferenceTrackManagement/
- 
- sudo python setup.py install 
-
 # To run the project
 
  cd to the conferenceTrackManagement folder 
@@ -150,7 +142,7 @@ provide the input format using CLI or STDIN
 
  Then, Execute below command
  
-  `python -m unittest test/test_suite.py`
+  `python -m unittest discover`
 
 # Steps to run test coverage
 
