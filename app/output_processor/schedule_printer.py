@@ -19,12 +19,12 @@ def print_tracks(track_id):
     print(track)
 
 '''
-printing the slots
+printing the sessions
 '''
-def print_slots(slots):
-    if(len(slots)>0):
-        for slot in slots:
-            print(slot)
+def print_slots(sessions):
+    if(len(sessions)>0):
+        for session in sessions:
+            print(session)
 '''
 printing the events
 '''

@@ -6,9 +6,9 @@ from app.constants import constants
 
 class test_session_schedule(unittest.TestCase):
     '''
-    test case to fill the slot with the talk
+    test case to fill the session with the talk
     '''
-    def test_fill_slot(self):
+    def test_fill_session(self):
         start_time = constants.TRACK_START_TIME
         session_duration = constants.MORNING_SLOT_DURATION_MINUTES
         talks = [('Writing Fast Tests Against Enterprise Rails 60min', 60), ('Rails for Python Developers lightning', 5)]
