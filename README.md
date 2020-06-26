@@ -110,6 +110,10 @@ User Interface CSS in Rails Apps 30min
 
 Please install python 3 and above
 
+Install the required packages by executing below command
+
+`pip install -r requirements.txt`
+
 # Installation
 
 First, clone conferenceTrackManagement using git
